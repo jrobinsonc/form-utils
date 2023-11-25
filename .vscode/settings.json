@@ -1,0 +1,29 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ],
+  "eslint.options": {
+    "extensions": [
+      ".js",
+      ".ts"
+    ],
+    "overrideConfigFile": ".eslintrc.js"
+  },
+  "prettier.enable": true,
+  "prettier.configPath": ".prettierrc.js",
+  "prettier.ignorePath": ".gitignore",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": true,
+    "source.organizeImports": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript][typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  }
+}
